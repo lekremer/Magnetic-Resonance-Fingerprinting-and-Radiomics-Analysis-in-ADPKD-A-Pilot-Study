@@ -2,4 +2,4 @@
 This study investigated radiomic features extracted from magnetic resonance fingerprinting (MRF)-acquired T1 and T2 quantitative maps in children and young adults with autosomal dominant polycystic kidney disease (ADPKD) with normal kidney function and compared these features to those extracted from MRF images of healthy volunteers.
 
 The MATLAB folder contains:
-1. glm_lda.mlx: general code for the leave-one-out linear discriminant analysis classifier model with LASSO-generalized linear for feature selection.
+1. LOOCV_lda.mlx: general code for the leave-one-out linear discriminant analysis classifier model with LASSO-generalized linear for feature selection.
