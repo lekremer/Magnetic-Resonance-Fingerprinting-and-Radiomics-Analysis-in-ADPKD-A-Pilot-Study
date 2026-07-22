@@ -1,37 +1,48 @@
-# Magnetic Resonance Fingerprinting and Radiomics Analysis in ADPKD A Pilot Study
-This study investigated radiomic features extracted from magnetic resonance fingerprinting (MRF)-acquired T1 and T2 quantitative maps in children and young adults with autosomal dominant polycystic kidney disease (ADPKD) with normal kidney function and compared these features to those extracted from MRF images of healthy volunteers.
+# Magnetic Resonance Fingerprinting and Radiomics Analysis in ADPKD: A Pilot Study
 
-The MATLAB folder contains:
-1. Leave-one-patient-out LDA classifier with LASSO feature selection
+This repository contains example MATLAB code used in the study investigating radiomic features extracted from magnetic resonance fingerprinting (MRF)-acquired T1 and T2 quantitative maps in children and young adults with autosomal dominant polycystic kidney disease (ADPKD). Radiomic features from participants with ADPKD and preserved kidney function were compared with those extracted from healthy volunteers.
+
+**Note:** Imaging data and participant data are not included because of institutional data-sharing restrictions.
+
+## Repository Contents
+
+### MATLAB
+- Leave-one-patient-out (LOPO) linear discriminant analysis (LDA) classifier with LASSO feature selection
 
 ## Description
-MATLAB code implementing a leave-one-patient-out cross-validation
-pipeline for binary classification using:
-- LASSO generalized linear model feature selection
+
+This MATLAB script implements a leave-one-patient-out cross-validation (LOPO-CV) pipeline for binary classification using:
+
+- LASSO generalized linear model (GLM) feature selection
 - Pearson correlation filtering
-- Linear discriminant analysis classifier
+- Linear discriminant analysis (LDA) classifier
 
 ## Requirements
-MATLAB version R2025a
-Statistics and Machine Learning Toolbox
+
+- MATLAB R2025a
+- Statistics and Machine Learning Toolbox
 
 ## Input
-Input feature file should be an excel or CSV table containing:
-- ID: unique participant identifier
-- Truth: binary outcome variable (0/1)
-- Remaining columns: radiomic features
+
+The input feature table should be provided as an Excel (`.xlsx`) or CSV (`.csv`) file containing:
+
+- **ID** – Unique participant identifier
+- **Truth** – Binary outcome variable (0/1)
+- **Remaining columns** – Radiomic features
 
 ## Workflow
-1. Load feature table
-2. Perform leave-one-patient-out cross validation
-3. Select features using LASSO within each training fold
-4. Remove correlated features
-5. Train LDA classifier
-6. Generate classification performance metrics
+
+1. Load the feature table.
+2. Perform leave-one-patient-out cross-validation.
+3. Select features using LASSO within each training fold.
+4. Remove highly correlated features using Pearson correlation filtering.
+5. Train an LDA classifier.
+6. Evaluate model performance.
 
 ## Outputs
-- AUC
+
+- Area under the ROC curve (AUC)
 - Confusion matrix
-- Classification scores
+- Predicted classification scores
 - Feature selection frequency
 - Feature correlation heatmap
