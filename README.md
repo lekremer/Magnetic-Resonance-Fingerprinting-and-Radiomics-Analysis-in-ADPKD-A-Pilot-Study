@@ -7,11 +7,11 @@ This repository contains example MATLAB code used in the study investigating rad
 ## Repository Contents
 
 ### MATLAB
-- Leave-one-patient-out (LOPO) linear discriminant analysis (LDA) classifier with LASSO feature selection
+- Leave-one-patient-out linear discriminant analysis classifier with LASSO feature selection
 
 ## Description
 
-This MATLAB script implements a leave-one-patient-out cross-validation (LOPO-CV) pipeline for binary classification using:
+This MATLAB script implements a leave-one-patient-out cross-validation pipeline for binary classification using:
 
 - LASSO generalized linear model (GLM) feature selection
 - Pearson correlation filtering
@@ -24,7 +24,7 @@ This MATLAB script implements a leave-one-patient-out cross-validation (LOPO-CV)
 
 ## Input
 
-The input feature table should be provided as an Excel (`.xlsx`) or CSV (`.csv`) file containing:
+The input feature table should be provided as an Excel (`.xlsx`) file containing:
 
 - **ID** – Unique participant identifier
 - **Truth** – Binary outcome variable (0/1)
