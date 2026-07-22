@@ -1,4 +1,4 @@
-# Magnetic Resonance Fingerprinting and Radiomics Analysis in ADPKD: A Pilot Study
+# A pilot study of magnetic resonance fingerprinting and radiomics analysis in autosomal dominant polycystic kidney disease
 
 This repository contains example MATLAB code used in the study investigating radiomic features extracted from magnetic resonance fingerprinting (MRF)-acquired T1 and T2 quantitative maps in children and young adults with autosomal dominant polycystic kidney disease (ADPKD). Radiomic features from participants with ADPKD and preserved kidney function were compared with those extracted from healthy volunteers.
 
